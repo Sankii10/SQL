@@ -142,7 +142,7 @@ FROM EmployeeDetail;
 
 
 
--- Get only Month part of "JoiningDateî 
+-- Get only Month part of "JoiningDate‚Äù 
 
 SELECT firstname, lastname, MONTH(joiningdate) AS DayOfjoining
 FROM EmployeeDetail;
