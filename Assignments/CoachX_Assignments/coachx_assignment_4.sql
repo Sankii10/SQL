@@ -135,7 +135,7 @@ SELECT CONCAT(name,' ', surname) AS FullName
 FROM students;
 
 
--- Example 9: List the students with the names starting with ìAî letter in the student table 
+-- Example 9: List the students with the names starting with ‚ÄúA‚Äù letter in the student table 
 
 SELECT name, surname
 FROM students
@@ -290,7 +290,7 @@ FROM students
 ORDER BY NEWID();
 
 
--- Example 29: Bring some random studentís name , surname and number from class 10C
+-- Example 29: Bring some random student‚Äôs name , surname and number from class 10C
 
 SELECT TOP 1 stu_id, name, surname
 FROM students 
@@ -322,7 +322,7 @@ INSERT INTO students(stu_id,name,surname, gender,class) VALUES(13, 'Linda','Sand
 SELECT *FROM students;
 
 
--- Increase all of the studentsí score by 5 points
+-- Increase all of the students‚Äô score by 5 points
 
 SELECT name, surname,point, (point + 5) AS newmarks
 FROM students;
