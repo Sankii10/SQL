@@ -1242,7 +1242,7 @@ ORDER BY employee_id DESC;
 
 -- 4) SQL CASE expression
 
--- B. Write a Query  If the salary is less than 3000, the CASE expression returns “Low”. If the salary is between 3000 and 5000, it returns “average”. When the salary is greater than 5000, the CASE expression returns “High”. 
+-- B. Write a Query  If the salary is less than 3000, the CASE expression returns Â“LowÂ”. If the salary is between 3000 and 5000, it returns Â“averageÂ”. When the salary is greater than 5000, the CASE expression returns Â“HighÂ”. 
 
 SELECT first_name, last_name, salary,
 CASE
@@ -1271,7 +1271,7 @@ FROM employees;
 
 -- 5) SQL UPDATE statement 
 
--- Write a Query to update Sarah’s last name from  Bell to Lopez 
+-- Write a Query to update SarahÂ’s last name from  Bell to Lopez 
 
 UPDATE employees
 SET last_name = 'Bell'
