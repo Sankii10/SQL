@@ -136,7 +136,7 @@ WHERE EmployeeSalary.Project IS NULL;
 
 
 
--- Write an SQL query to calculate the total annual income for each occupation from the Customers table and display the results in descending order of total income.”
+-- Write an SQL query to calculate the total annual income for each occupation from the Customers table and display the results in descending order of total income.â€
 
 SELECT Occupation, SUM(AnnualIncome) AS TotalInc
 FROM Customers
@@ -253,7 +253,7 @@ SELECT
 FROM EmployeeDetails;
 
 
--- "Write a query to display each employee’s name along with their earliest and latest Date of Joining (in case they have multiple joining records in the EmployeeDetails table)."
+-- "Write a query to display each employeeâ€™s name along with their earliest and latest Date of Joining (in case they have multiple joining records in the EmployeeDetails table)."
 
 SELECT FullName, MIN(DateOfJoining) AS New_Joiner, MAX(DateOfJoining) AS Old_employee
 FROM EmployeeDetails
@@ -276,7 +276,7 @@ FROM Customers
 GROUP BY Occupation ;
 
 
---  Find employees who don’t have a Project assigned. 
+--  Find employees who donâ€™t have a Project assigned. 
 
 SELECT EmployeeDetails.FullName, EmployeeDetails.ManagerId, EmployeeSalary.Project
 FROM EmployeeDetails
@@ -360,7 +360,7 @@ GROUP BY Managers.manager_name
 HAVING COUNT(*) > 1;
 
 
--- Use window function to find the difference between current row’s salary and previous row’s salary partitioned by Project. 
+-- Use window function to find the difference between current rowâ€™s salary and previous rowâ€™s salary partitioned by Project. 
 
 --EMPLOYEESALARY TABLE
 
