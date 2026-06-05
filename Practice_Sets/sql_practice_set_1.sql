@@ -473,7 +473,7 @@ FOR XML AUTO;
 
 
 
--- How to get the current month’s name from ?
+-- How to get the current monthÂ’s name from ?
 -- ON Customers TABLE
 
 SELECT FirstName, LastName, BirthDate, DATENAME(MONTH, BirthDate) AS MonthName
@@ -563,7 +563,7 @@ GROUP BY Project;
 
 
 
--- Write a query to fetch all employees whose names end with ‘n’ OR 'N'. 
+-- Write a query to fetch all employees whose names end with Â‘nÂ’ OR 'N'. 
 
 --ON CUSTOMERS TABLE
 SELECT FirstName, LastName 
