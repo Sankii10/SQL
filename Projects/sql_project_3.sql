@@ -339,7 +339,7 @@ FROM Customers
 GROUP BY HomeOwner;
 
 
--- Write a query to classify customers as High Income (>80,000), Medium Income (50,000–80,000), or Low Income (<50,000).
+-- Write a query to classify customers as High Income (>80,000), Medium Income (50,000Â–80,000), or Low Income (<50,000).
 
 SELECT FirstName, LastName, AnnualIncome,
 CASE 
@@ -523,7 +523,7 @@ FROM Customers;
 
 
 
--- Show each customer’s income compared to the average income of all customers (above/below).
+-- Show each customerÂ’s income compared to the average income of all customers (above/below).
 
 SELECT AVG(AnnualIncome) AS AvgInc
 FROM Customers;
