@@ -881,13 +881,13 @@ SELECT FirstName, LastName, DATENAME(MONTH, birthDate) AS MONTH_NAME
 FROM Customers$
 WHERE MONTH(BirthDate) = 7;
 
---6. Write an SQL query to add 10 years to each customer’s `BirthDate`.
+--6. Write an SQL query to add 10 years to each customerÂ’s `BirthDate`.
 
 SELECT FirstName, LastName, DATEADD(YEAR, 10, BirthDate) AS NEWYEAR
 FROM Customers$;
 
 
--- 7. Write an SQL query to calculate the number of days between today’s date and each customer’s `BirthDate`.
+-- 7. Write an SQL query to calculate the number of days between todayÂ’s date and each customerÂ’s `BirthDate`.
 
 SELECT FirstName, LastName, DATEDIFF(DAY, BirthDate, GETDATE()) AS DATE_DIFF
 FROM Customers$;
