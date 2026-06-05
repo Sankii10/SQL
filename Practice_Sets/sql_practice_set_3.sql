@@ -897,7 +897,7 @@ FROM EmployeeDetails
 FOR XML AUTO;
 
 
--- How to get the current month’s name from ?
+-- How to get the current monthÂ’s name from ?
 
 SELECT FullName, DateOfJoining , DATENAME(MONTH, DateOfJoining) AS MonthName
 FROM EmployeeDetails;
@@ -975,7 +975,7 @@ FROM EmployeeDetails
 GROUP BY ManagerId;
 
 
--- Write a query to fetch all employees whose names end with ‘n’.
+-- Write a query to fetch all employees whose names end with Â‘nÂ’.
 
 SELECT FullName, ManagerId
 FROM EmployeeDetails
