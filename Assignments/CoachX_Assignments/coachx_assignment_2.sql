@@ -178,7 +178,7 @@ WHERE Rank = 12;
 
 -- PART- 2 
 
--- Ques.1. Write an SQL query to fetch the EmpId and FullName of all the employees working under the Manager with id – 986
+-- Ques.1. Write an SQL query to fetch the EmpId and FullName of all the employees working under the Manager with id â€“ 986
 
 SELECT EmpId, FullName
 FROM EmployeeDetails
@@ -211,14 +211,14 @@ FROM EmployeeSalary
 WHERE Salary BETWEEN 9000 AND 15000;
 
 
--- Ques.6. Write an SQL query to fetch those employees who live in Toronto and work under the manager with ManagerId – 321.
+-- Ques.6. Write an SQL query to fetch those employees who live in Toronto and work under the manager with ManagerId â€“ 321.
 
 SELECT FullName, ManagerId, City
 FROM EmployeeDetails
 WHERE City = 'Toronto' AND ManagerId = 321;
 
 
--- Ques.7. Write an SQL query to fetch all the employees who either live in California or work under a manager with ManagerId – 321. 
+-- Ques.7. Write an SQL query to fetch all the employees who either live in California or work under a manager with ManagerId â€“ 321. 
 
 SELECT FullName, ManagerId , City
 FROM EmployeeDetails
@@ -248,7 +248,7 @@ JOIN EmployeeSalary
 ON EmployeeDetails.EmpId = EmployeeSalary.EmpId;
 
 
--- Ques.10. Write an SQL query to fetch the employees whose name begins with any two characters, followed by a text “hn” and ends with any sequence of characters.
+-- Ques.10. Write an SQL query to fetch the employees whose name begins with any two characters, followed by a text â€œhnâ€ and ends with any sequence of characters.
 
 SELECT Fullname, City
 FROM EmployeeDetails
@@ -269,7 +269,7 @@ HAVING COUNT(*) > 1;
 
 
 -- USE PRODUCTS DB
--- Fetch all the EmpIds which are present in either of the tables – ‘EmployeeDetails’ and ‘EmployeeSalary’
+-- Fetch all the EmpIds which are present in either of the tables â€“ â€˜EmployeeDetailsâ€™ and â€˜EmployeeSalaryâ€™
 
 SELECT EmpId
 FROM EmployeeDetails
@@ -304,7 +304,7 @@ ON EmployeeDetails.EmpId = EmployeeSalary.EmpId
 WHERE EmployeeSalary.Salary IS NULL ;
 
 
---  Fetch the EmpIds that are present in both the tables – ‘EmployeeDetails’ and ‘EmployeeSalary’
+--  Fetch the EmpIds that are present in both the tables â€“ â€˜EmployeeDetailsâ€™ and â€˜EmployeeSalaryâ€™
 
 SELECT EmployeeDetails.EmpId, EmployeeDetails.FullName, EmployeeDetails.City, EmployeeSalary.Project, EmployeeSalary.Salary
 FROM EmployeeDetails
@@ -312,7 +312,7 @@ INNER JOIN EmployeeSalary
 ON EmployeeDetails.EmpId = EmployeeSalary.EmpId;
 
 
---  Fetch the employee’s full names and replace the space: 
+--  Fetch the employeeâ€™s full names and replace the space: 
 
 SELECT FullName, REPLACE(FullName,' ', '_') AS UpdatedFullName
 FROM EmployeeDetails
@@ -348,7 +348,7 @@ FROM EmployeeDetails;
 
 -- PART 4 
 
--- Find the count of the total occurrences of a particular character – ‘n’ in the FullName field: 
+-- Find the count of the total occurrences of a particular character â€“ â€˜nâ€™ in the FullName field: 
 
 SELECT SUM(LEN(FullName) - LEN(REPLACE(FullName, 'n', ''))) AS TotalCount
 FROM EmployeeDetails;
@@ -405,7 +405,7 @@ INNER JOIN EmployeeSalary
 ON EmployeeDetails.EmpId = EmployeeSalary.EmpId;
 
 
--- Fetch the project-wise count of employees sorted by project’s count in descending order: 
+-- Fetch the project-wise count of employees sorted by projectâ€™s count in descending order: 
 
 
 SELECT Project, COUNT(*) TotalProject
